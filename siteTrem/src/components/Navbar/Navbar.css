@@ -1,0 +1,71 @@
+nav {
+    min-height: 10vh;
+    background-color: #6365ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    border-bottom: #fff 1px solid;
+    z-index: 5;
+    padding: 0 20px;
+  }
+  
+  nav .menu-wrapper {
+    display: flex;
+  }
+  
+  nav .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav .menu a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 2vh;
+  }
+  
+  nav .menu p {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 1vh;
+  }
+  
+  nav .menu p img {
+    width: 5vh;
+    min-width: 4vh;
+  }
+  
+  nav .menu button {
+    padding: 0.8vh;
+    border-radius: 15vh;
+    background-color: #fff;
+  }
+  
+  nav .menu button a {
+    color: #6365ff;
+    padding: 0;
+  }
+  
+  nav .menu a:hover {
+    color: #292A7A;
+  }
+  
+  nav .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  nav .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+  
