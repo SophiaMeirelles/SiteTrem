@@ -1,5 +1,6 @@
 import React from "react";
 import "./../Home/Home.css";
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -17,18 +18,36 @@ function Home() {
       </div>
     
       <div className={"content"}>
-        <div className={"lustracao1"}>
-          <img src="./Ilustracao1.svg" alt="" />
-        </div>
+
         <div>
-        <h1>Procure o transporte ideal para sua necessidade.</h1>
-          <p>Precisa de um transporte para seus filhos ou para você? Pesquise já no Trem pelos motoristas mais próximos e organize sua agenda.</p>
+          <img src="./Ilustracao1.svg" alt=""/>
+            <div>
+              <h1>Procure o transporte ideal para sua necessidade.</h1>
+                <p>Precisa de um transporte para seus filhos ou para você? Pesquise já no Trem pelos motoristas mais próximos e organize sua agenda.</p>
+              <Link to="/app" className={"button"}>Começar</Link>
+            </div>
         </div>
 
-        <div className={"lustracao2"}>
-          <img src="./Ilustracao2.svg" alt="" />
+        <div>
+            <div>
+              <h1>Procure o transporte ideal para sua necessidade.</h1>
+                <p>Precisa de um transporte para seus filhos ou para você? Pesquise já no Trem pelos motoristas mais próximos e organize sua agenda.</p>
+                <Link to="/app" className={"button"}>Começar</Link>
+            </div>
+          <img src="./Ilustracao2.svg" alt=""/>
         </div>
+
       </div>
+
+      <div  className={'DivLinkApp'}>
+        <img src="Ilustracao3.svg" alt="" />
+        <div className={"LinkApp"} >
+          <Link to="/app">Conheça quem somos nós!</Link>    
+        </div>
+        
+      </div>
+      
+
     </>
   );
 }

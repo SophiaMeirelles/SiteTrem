@@ -16,6 +16,8 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+
+  border: solid red 0px;
 }
 body{
   width: 100%;
