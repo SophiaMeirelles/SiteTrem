@@ -1,109 +1,297 @@
-.header{
-    min-height: 100vh;
-    max-height: fit-content;
-    background-color: #6365ff;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
+.header {
+  min-height: 100vh;
+  max-height: fit-content;
+  background-color: #6365ff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10vh;
 }
-.header div{
-    width: 50%;
-}
-.header h1{
-    font-size: 100px;
-    font-weight: 500;
-}
-.header h3{
-    font-size: 40px;
-    font-weight: 500;
-}
-.header p{
-    font-size: 35px;
-    font-weight: 300;
+.header > div {
+  width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.content{
-    height:fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 5vh 0 5vh 0;
+.header svg {
+  fill: #292a7a;
+  scale: 550%;
 }
-
-.content > div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.header h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.header h3 {
+  font-size: 60px;
+  font-weight: 500;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid #292a7a; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(26, end), blink-caret 0.75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
     width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #292a7a;
+  }
+}
+.header p {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.content {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5vh 0 5vh 0;
+}
+
+.content > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 3vh;
+}
+
+.content > div > div {
+  width: 30%;
+}
+
+.content > div ~ div {
+  text-align: right;
+}
+
+.content h1 {
+  color: #6365ff;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.content p {
+  color: #292a7a;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 2vh 0 2vh 0;
+}
+
+.content .button {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  background-color: #6365ff;
+  border: #6365ff solid 2px;
+  padding: 1vh 2vh 1vh 2vh;
+  border-radius: 10vh;
+  font-size: 18px;
+  margin: 1vh;
+}
+
+.content .button:hover {
+  background-color: white;
+  color: #292a7a;
+  border: #292a7a solid 2px;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.DivLinkApp {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  margin: 2vh 0 2vh 0;
+  font-weight: 400;
+}
+
+.DivLinkApp img {
+  position: absolute;
+  width: 50vh;
+}
+
+.LinkApp {
+  height: 30vh;
+  width: 100%;
+}
+
+.LinkApp a {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  background-color: #6365ff;
+  font-size: 50px;
+  padding-right: 10vh;
+}
+
+.LinkApp a:hover {
+  background-color: #292a7a;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.DivCelulares {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.DivCelulares > a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #292a7a;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin: 5vh;
+  gap: 2vh;
+}
+
+.DivCelulares > a:hover {
+  transform: scale(110%);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.DivCelulares > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vh;
+}
+
+.DivCelulares > div img {
+  border-radius: 55px;
+  overflow: hidden;
+}
+
+.DivCelulares > div img:hover {
+  box-shadow: 0 0 4vh #999999;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.DivLinkContato {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  overflow: hidden;
+  margin: 2vh 0 2vh 0;
+  font-weight: 400;
+}
+
+.DivLinkContato img {
+  position: absolute;
+  width: 45vh;
+}
+
+.LinkContato {
+  height: 30vh;
+  width: 100%;
+}
+
+.LinkContato a {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  background-color: #6365ff;
+  font-size: 50px;
+  padding-left: 10vh;
+}
+
+.LinkContato a:hover {
+  background-color: #292a7a;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+@media (max-width: 480px) {
+  /* Estilos para smartphones pequenos */
+  .header > div {
     flex-wrap: wrap;
-    margin: 3vh;
-}
-
-.content > div > div{
-    width: 30%;
-}
-
-.content > div ~ div{
-    text-align: right;
-}
-
-.content h1{
-    color: #6365ff;
-    font-size: 35px;
-    font-weight: 500;
-}
-
-.content p{
-    color: #292A7A;
-    font-size: 22px;
-    font-weight: 300;
-    margin:  2vh 0 2vh 0 ;
-}
-
-.content .button{
-    color: white;
-    text-decoration: none;
-    background-color: #6365ff;
-    padding: 1vh 2vh  1vh 2vh;
-    border-radius: 10vh;
-    font-size: 18px;
-    margin: 1vh;
-}
-
-.DivLinkApp{
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    align-items:flex-end;
+  }
+  .header > div div{
+    scale: 55%;
+  }
+  .header img{
+    scale: 70%;
+  }
+  .content div img{
+    width:80%;
     overflow: hidden;
-    margin: 2vh 0 2vh 0;
-}
-
-.DivLinkApp img{
-    position: absolute;
-    width: 50vh;
-}
-
-.LinkApp{
-    height: 30vh;
+    padding-top: 2vh;
+  }
+  .content > div > div {
+    padding-top: 2vh;
+    width: 80%;
+    scale: 90%;
+  }
+  .DivLinkApp {
     width: 100%;
-}
-
-.LinkApp a{
-    display: flex;
-    align-items: center;
-    justify-content: right;
+    height: 15vh;
+  }
+  .DivLinkApp img{
+    width: 40%;
+  }
+  .LinkApp {
+    height: 15vh;
     width: 100%;
-    height: 100%;
-    color: white;
-    text-decoration: none;
-    background-color: #6365ff;
-    font-size: 50px;
-    padding-right: 10vh;
+  }
+  .LinkApp a {
+    font-size: 20px;
+    padding-right: 1vh;
+  }
+  .DivCelulares > div img {
+    width: 50%;
+    border-radius: 55px;
+    overflow: hidden;
+  }  
+  .DivLinkContato {
+    margin-top: 5vh;
+    width: 100%;
+    height: 15vh;
+  }
+  .DivLinkContato img{
+    width: 40%;
+  }
+  .LinkContato {
+    height: 15vh;
+    width: 100%;
+  }
+  .LinkContato a {
+    font-size: 20px;
+    padding-left: 1vh;
+  }
 }
-
- 

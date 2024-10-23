@@ -1,4 +1,49 @@
 footer{
-    background-color: aquamarine;
-    color: #000;
+    background-color: #6365ff;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center ;
+    height: fit-content;
+    gap: 5vh;
+    padding: 5vh;
 }
+
+figure{
+    text-align: center;
+}
+figure img{
+    width: 30vh;
+}
+
+.Lista ul, .Sociais ul{
+    padding: 1vh 0 0 0;
+}
+
+.Lista a, .Sociais a{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1vh;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 1vh 0 1vh 0;
+
+}
+.Lista a:hover, .Sociais a:hover{
+    color: #292A7A;
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+@media (max-width: 480px) {
+    /* Estilos para smartphones pequenos */
+    figure img{
+        width: 20vh;
+    }
+    .Lista a, .Sociais a{
+        font-size: 20px;
+    }
+  }

@@ -11,16 +11,17 @@ import TremHome from './pages/Home/Home';
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
+    <Navbar />
+    <Routes>
         <Route path="/" element={<TremHome />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/motorista" element={<Motorista />} />
         <Route path="/app" element={<AppPage />} />
         <Route path="/contato" element={<Contato />} />
-      </Routes>
-      <Footer />
-    </Router>
+    </Routes>
+    <Footer />
+</Router>
+
   );
 }
 
