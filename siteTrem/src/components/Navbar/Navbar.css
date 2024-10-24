@@ -33,8 +33,11 @@ nav {
 }
 
 .hamburger {
+  width: 100%;
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: end;
   cursor: pointer;
 }
 
@@ -45,12 +48,14 @@ nav {
   margin: 4px 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px){
   nav{
+    min-height: 5vh;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+
   }
   .menu {
     display: none;
@@ -65,5 +70,7 @@ nav {
 
   .hamburger {
     display: flex;
+    padding: 1vh;
+
   }
 }

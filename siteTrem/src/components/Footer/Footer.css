@@ -38,12 +38,24 @@ figure img{
     transition:cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
     /* Estilos para smartphones pequenos */
+    footer{
+        background-color: #6365ff;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center ;
+        height: fit-content;
+        gap: 5vh;
+        padding: 5vh;
+    }
     figure img{
         width: 20vh;
     }
     .Lista a, .Sociais a{
-        font-size: 20px;
+        font-size: 18px;
     }
   }

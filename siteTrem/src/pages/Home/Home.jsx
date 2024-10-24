@@ -35,16 +35,16 @@ function Home() {
 
         <div>
             <div>
-              <h1>Procure o transporte ideal para sua necessidade.</h1>
-                <p>Precisa de um transporte para seus filhos ou para você? Pesquise já no Trem pelos motoristas mais próximos e organize sua agenda.</p>
-                <Link to="/app" className={"button"}>Começar</Link>
+              <h1>Monitore em tempo real seu transporte institucional.</h1>
+                <p>Vizualize onde o transporte está em tempo real, acompanhe as notificações do motorista e veja a melhor rota para seu destino final.</p>
+                <Link to="/motoristas" className={"button"}>Começar</Link>
             </div>
           <img src="./Ilustracao2.svg" alt=""/>
         </div>
 
       </div>
 
-      <div  className={'DivLinkApp'}>
+      <div  className={'DivLinkSobre'}>
         <img src="Ilustracao3.svg" alt="" />
         <div className={"LinkApp"} >
           <Link to="/sobre">Conheça quem somos nós!</Link>    

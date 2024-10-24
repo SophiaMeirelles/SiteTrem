@@ -119,7 +119,7 @@
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
 }
 
-.DivLinkApp {
+.DivLinkSobre {
   width: 100%;
   height: 40vh;
   display: flex;
@@ -129,7 +129,7 @@
   font-weight: 400;
 }
 
-.DivLinkApp img {
+.DivLinkSobre img {
   position: absolute;
   width: 50vh;
 }
@@ -162,6 +162,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 5vh;
 }
 
 .DivCelulares > a {
@@ -237,16 +238,22 @@
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 375px) and (max-width: 480px){
   /* Estilos para smartphones pequenos */
   .header > div {
     flex-wrap: wrap;
   }
   .header > div div{
-    scale: 55%;
+    scale:  65%;
+  }
+  .header h3 {
+    font-size: 40px;
+  }
+  .header p {
+    font-size: 30px;
   }
   .header img{
-    scale: 70%;
+    scale: 60%;
   }
   .content div img{
     width:80%;
@@ -258,11 +265,11 @@
     width: 80%;
     scale: 90%;
   }
-  .DivLinkApp {
+  .DivLinkSobre {
     width: 100%;
     height: 15vh;
   }
-  .DivLinkApp img{
+  .DivLinkSobre img{
     width: 40%;
   }
   .LinkApp {
@@ -270,12 +277,15 @@
     width: 100%;
   }
   .LinkApp a {
-    font-size: 20px;
+    font-size: 16px;
     padding-right: 1vh;
+  }
+  .DivCelulares > a {
+    font-size: 25px;
   }
   .DivCelulares > div img {
     width: 50%;
-    border-radius: 55px;
+    border-radius: 35px;
     overflow: hidden;
   }  
   .DivLinkContato {
@@ -291,7 +301,201 @@
     width: 100%;
   }
   .LinkContato a {
-    font-size: 20px;
+    font-size: 16px;
+    padding-left: 1vh;
+  }
+}
+@media (min-width: 481px) and (max-width: 900px) {
+  .header > div {
+    flex-wrap: wrap;
+  }
+  .header > div div{
+    scale:  85%;
+  }
+  .header h3 {
+    font-size: 40px;
+  }
+  .header p {
+    font-size: 30px;
+  }
+  .header img{
+    scale: 60%;
+  }
+  .content div img{
+    width:50%;
+    overflow: hidden;
+    padding-top: 2vh;
+  }
+  .content > div > div {
+    padding-top: 2vh;
+    width: 80%;
+    scale: 90%;
+  }
+  .DivLinkSobre {
+    width: 100%;
+    height: 15vh;
+    margin-top: 15vh;
+  }
+  .DivLinkSobre img{
+    width: 40%;
+  }
+  .LinkApp {
+    height: 15vh;
+    width: 100%;
+  }
+  .LinkApp a {
+    font-size: 22px;
+    padding-right: 1vh;
+  }
+  .DivCelulares > div {
+    display: flex;
+    flex-direction: column;
+  }  
+  .DivCelulares > a {
+    font-size: 25px;
+  }
+  .DivCelulares > div img {
+    width: 80%;
+    border-radius: 25px;
+    overflow: hidden;
+  }  
+  .DivLinkContato {
+    margin-top: 10vh;
+    width: 100%;
+    height: 15vh;
+  }
+  .DivLinkContato img{
+    max-width: 40%;
+  }
+  .LinkContato {
+    height: 15vh;
+    width: 100%;
+  }
+  .LinkContato a {
+    font-size: 22px;
+    padding-left: 1vh;
+  }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  .header > div {
+    flex-wrap: wrap;
+  }
+  .header h3 {
+    font-size: 60px;
+  }
+  .header p {
+    font-size: 30px;
+  }
+  .header img{
+    margin-top: 2vh;
+    scale: 100%;
+  }
+  .content div img{
+    width:40%;
+    overflow: hidden;
+    padding-top: 2vh;
+  }
+
+  .DivLinkSobre {
+    width: 100%;
+    height: 15vh;
+    margin-top: 10vh;
+  }
+  .DivLinkSobre img{
+    width: 30%;
+  }
+  .LinkApp {
+    height: 15vh;
+    width: 100%;
+  }
+  .LinkApp a {
+    font-size: 30px;
+    padding-right: 1vh;
+  }
+  .DivCelulares > div {
+    display: flex;
+    flex-direction: row;
+  }  
+  .DivCelulares > a {
+    font-size: 25px;
+  }
+  .DivCelulares > div img {
+    width: 25%;
+    border-radius: 25px;
+    overflow: hidden;
+  }  
+  .DivLinkContato {
+    margin-top: 15vh;
+    width: 100%;
+    height: 15vh;
+  }
+  .DivLinkContato img{
+    max-width: 30%;
+  }
+  .LinkContato {
+    height: 15vh;
+    width: 100%;
+  }
+  .LinkContato a {
+    font-size: 22px;
+    padding-left: 1vh;
+  }
+}
+@media (min-width: 1101px) and (max-width: 1400px) {
+  .header > div {
+    flex-wrap: wrap;
+  }
+  .header h3 {
+    font-size: 60px;
+  }
+  .header p {
+    font-size: 30px;
+  }
+  .header img{
+    margin-top: 2vh;
+    scale: 100%;
+  }
+  .DivLinkSobre {
+    width: 100%;
+    height: 15vh;
+    margin-top: 30vh;
+  }
+  .DivLinkSobre img{
+    width: 40%;
+  }
+  .LinkApp {
+    height: 15vh;
+    width: 100%;
+  }
+  .LinkApp a {
+    font-size: 30px;
+    padding-right: 1vh;
+  }
+  .DivCelulares > div {
+    display: flex;
+  }  
+  .DivCelulares > a {
+    font-size: 25px;
+  }
+  .DivCelulares > div img {
+    width: 30%;
+    border-radius: 25px;
+    overflow: hidden;
+  }  
+  .DivLinkContato {
+    margin-top: 22vh;
+    width: 100%;
+    height: 15vh;
+  }
+  .DivLinkContato img{
+    max-width: 40%;
+  }
+  .LinkContato {
+    height: 15vh;
+    width: 100%;
+  }
+  .LinkContato a {
+    font-size: 22px;
     padding-left: 1vh;
   }
 }

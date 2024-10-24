@@ -1,0 +1,461 @@
+
+@media (max-width: 500px){
+    .DivApresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 80vh;
+        height: fit-content;
+        padding-top: 10vh;
+    }
+    .DivApresentacao > div{
+        width: 100%;
+        padding: 2vh;
+    }
+    .DivApresentacao h1{
+        margin-bottom: 1vh;
+        font-size: 30px;
+        font-weight: 500;
+        color: #292a7a;
+    }
+    .DivApresentacao p{
+        font-size: 20px;
+        font-weight: 300;
+        color: #292a7a;
+    }
+    .DivApresentacao img{
+        width: 65%;
+    }
+    
+    .DivApresentacao2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        min-height: 80vh;
+        height: fit-content;
+        margin-bottom: 3vh;
+    }
+    .DivApresentacao2 > div{
+        width: 100%;
+        padding: 2vh;
+    }
+    .DivApresentacao2 h1{
+        margin-bottom: 1vh;
+        font-size: 30px;
+        font-weight: 500;
+        color: #292a7a;
+    }
+    .DivApresentacao2 p{
+        font-size: 20px;
+        font-weight: 300;
+        color: #292a7a;
+    }
+    .DivApresentacao2 img{
+        width: 65%;
+    }
+
+    .DivIntegrantes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .DivIntegrantes h1{
+        color: #292a7a;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .DivIntegrantes img{
+        width: 40%;
+    }
+    .DivIntegrantes1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+        color: #292a7a;
+        width: 80%;
+    }
+    .DivIntegrantes1 h2{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .DivIntegrantes1 p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .DivIntegrantes1 a{
+        color: #292a7a;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        display: block;
+    }
+    .DivIntegrantes2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+        color: #292a7a;
+        width: 80%;
+    }
+    .DivIntegrantes2 h2{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .DivIntegrantes2 p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .DivIntegrantes2 a{
+        display: block;
+        color: #292a7a;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        
+    }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+    .DivApresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 3vh;
+        padding-top: 5vh;
+    }
+    .DivApresentacao > div{
+        width: 100%;
+        padding: 2vh;
+    }
+    .DivApresentacao h1{
+        margin-bottom: 1vh;
+        font-size: 30px;
+        font-weight: 500;
+        color: #292a7a;
+    }
+    .DivApresentacao p{
+        font-size: 20px;
+        font-weight: 300;
+        color: #292a7a;
+    }
+    .DivApresentacao img{
+        width: 45%;
+    }
+    
+    .DivApresentacao2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 3vh;
+        padding-top: 1vh;
+    }
+    .DivApresentacao2 > div{
+        width: 100%;
+        padding: 2vh;
+    }
+    .DivApresentacao2 h1{
+        margin-bottom: 1vh;
+        font-size: 30px;
+        font-weight: 500;
+        color: #292a7a;
+    }
+    .DivApresentacao2 p{
+        font-size: 20px;
+        font-weight: 300;
+        color: #292a7a;
+    }
+    .DivApresentacao2 img{
+        width: 45%;
+    }
+
+    .DivIntegrantes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .DivIntegrantes h1{
+        color: #292a7a;
+        font-weight: 500;
+        font-size: 35px;
+    }
+    .DivIntegrantes img{
+        width: 30%;
+    }
+    .DivIntegrantes1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+        color: #292a7a;
+        width: 80%;
+    }
+    .DivIntegrantes1 h2{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .DivIntegrantes1 p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .DivIntegrantes1 a{
+        color: #292a7a;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 1vh;
+    }
+    .DivIntegrantes2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+        color: #292a7a;
+        width: 80%;
+    }
+    .DivIntegrantes2 h2{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .DivIntegrantes2 p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .DivIntegrantes2 a{
+        color: #292a7a;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 1vh;
+    }
+}
+@media (min-width: 701px) {
+    .DivApresentacao{
+        display: flex;
+        justify-content:center;
+        align-items:stretch;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 3vh;
+        padding-top: 15vh;
+    }
+    .DivApresentacao > div{
+        width: 50%;
+    }
+    .DivApresentacao h1{
+        margin-bottom: 1vh;
+        font-size: 35px;
+        font-weight: 500;
+        color: #292a7a;
+    }
+    .DivApresentacao p{
+        font-size: 25px;
+        font-weight: 300;
+        color: #292a7a;
+    }
+    .DivApresentacao img{
+        padding: 1vh;
+        max-width: 33%;
+    }
+
+    .DivApresentacao2{
+        display: flex;
+        justify-content:center;
+        align-items:stretch;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 3vh;
+        padding-top: 5vh;
+    }
+    .DivApresentacao2 > div{
+        width: 50%;
+    }
+    .DivApresentacao2 h1{
+        margin-bottom: 1vh;
+        font-size: 35px;
+        font-weight: 500;
+        color: #292a7a;
+    }
+    .DivApresentacao2 p{
+        font-size: 25px;
+        font-weight: 300;
+        color: #292a7a;
+    }
+    .DivApresentacao2 img{
+        padding: 1vh;
+        max-width: 33%;
+    }
+
+    .DivIntegrantes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .DivIntegrantes h1{
+        color: #292a7a;
+        font-weight: 500;
+        font-size: 35px;
+    }
+    .DivIntegrantes img{
+        width: 30%;
+    }
+    .DivIntegrantes1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        color: #292a7a;
+        width: 80%;
+    }
+    .DivIntegrantes1 h2{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .DivIntegrantes1 p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .DivIntegrantes1 a{
+        color: #292a7a;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 1vh;
+    }
+    .DivIntegrantes2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        color: #292a7a;
+        width: 80%;
+    }
+    .DivIntegrantes2 h2{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .DivIntegrantes2 p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .DivIntegrantes2 a{
+        color: #292a7a;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 1vh;
+    }
+}
+@media (min-width: 1100px) {
+    .DivApresentacao{
+        display: flex;
+        justify-content:center;
+        align-items:stretch;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 3vh;
+        padding-top: 15vh;
+    }
+    .DivApresentacao > div{
+        width: 30%;
+    }
+    .DivApresentacao h1{
+        margin-bottom: 1vh;
+        font-size: 35px;
+        font-weight: 500;
+        color: #292a7a;
+    }
+    .DivApresentacao p{
+        font-size: 25px;
+        font-weight: 300;
+        color: #292a7a;
+    }
+    .DivApresentacao img{
+        padding: 1vh;
+        max-width: 33%;
+    }
+
+    .DivApresentacao2 > div{
+        width: 30%;
+    }
+
+    .DivIntegrantes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .DivIntegrantes h1{
+        color: #292a7a;
+        font-weight: 500;
+        font-size: 35px;
+    }
+    .DivIntegrantes1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        color: #292a7a;
+    }
+    .DivIntegrantes1 h2{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .DivIntegrantes1 p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .DivIntegrantes1 a{
+        color: #292a7a;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 2vh;
+    }
+    .DivIntegrantes2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        color: #292a7a;
+    }
+    .DivIntegrantes2 h2{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .DivIntegrantes2 p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .DivIntegrantes2 a{
+        color: #292a7a;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 2vh;
+    }
+}
