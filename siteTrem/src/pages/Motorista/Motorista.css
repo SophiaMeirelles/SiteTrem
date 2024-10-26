@@ -1,0 +1,292 @@
+@media (max-width: 500px){
+    .DivApresentacaoMotorista{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        min-height: 60vh;
+        height: fit-content;
+        padding-top: 0vh;
+        margin: 0 auto;
+        padding-top: 13vh;
+    }
+    .DivApresentacaoMotorista > div{
+        width: 100%;
+        padding: 2vh;
+    }
+    .DivApresentacaoMotorista h1{
+        margin-bottom: 1vh;
+        font-size: 25px;
+        font-weight: 500;
+        color: #292a7a;
+    }
+    .DivApresentacaoMotorista p{
+        font-size: 20px;
+        font-weight: 300;
+        color: #292a7a;
+    }
+    .DivApresentacaoMotorista img{
+        width: 85%;
+        margin: 2vh;
+    }
+
+    .DivApresentacaoGrid{
+        margin: 0 auto;
+        height: fit-content;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
+        grid-template-areas: "img1" "p1" "img2" "p2" "img3" "p3";
+        align-items: center;
+        justify-items: center;
+        gap: 2vh 1vh;
+    }
+    div h1{
+        color: #292a7a;
+        font-weight: 500;
+        font-size: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .DivApresentacaoGridImg1{
+        grid-area: img1;
+        width: 20vh;
+    }
+    .DivApresentacaoGridP1{
+        grid-area: p1;
+        color: #292a7a;
+        font-size: 22px;
+        font-weight: 300;
+        text-align: justify;
+    }
+    .DivApresentacaoGridImg2{
+        grid-area: img2;
+        width: 20vh;
+    }
+    .DivApresentacaoGridP2{
+        grid-area: p2;
+        color: #292a7a;
+        font-size: 22px;
+        font-weight: 300;
+        text-align: justify;
+    }
+    .DivApresentacaoGridImg3{
+        grid-area: img3;
+        width: 20vh;
+    }
+    .DivApresentacaoGridP3{
+        grid-area: p3;
+        color: #292a7a;
+        font-size: 22px;
+        font-weight: 300;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+    .DivApresentacaoMotorista{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        min-height: 60vh;
+        height: fit-content;
+        padding-top: 5vh;
+        margin: 0 auto;
+    }
+    .DivApresentacaoMotorista > div{
+        width: 100%;
+        padding: 2vh;
+    }
+    .DivApresentacaoMotorista h1{
+        margin-bottom: 1vh;
+        font-size: 30px;
+        font-weight: 500;
+        color: #292a7a;
+    }
+    .DivApresentacaoMotorista p{
+        font-size: 22px;
+        font-weight: 300;
+        color: #292a7a;
+    }
+    .DivApresentacaoMotorista img{
+        width: 85%;
+        margin: 2vh;
+    }
+
+    .DivApresentacaoGrid{
+        margin: 0 auto;
+        height: fit-content;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20vh 20vh 20vh;
+        grid-template-areas: "img1 p1" "img2 p2" "img3 p3";
+        align-items: center;
+        gap: 2vh 1vh;
+        margin-top: 5vh;
+    }
+    .DivApresentacaoGridImg1{
+        grid-area: img1;
+        width: 25vh;
+    }
+    .DivApresentacaoGridP1{
+        grid-area: p1;
+        color: #292a7a;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .DivApresentacaoGridImg2{
+        grid-area: img2;
+        width: 25vh;
+    }
+    .DivApresentacaoGridP2{
+        grid-area: p2;
+        color: #292a7a;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .DivApresentacaoGridImg3{
+        grid-area: img3;
+        width: 25vh;
+    }
+    .DivApresentacaoGridP3{
+        grid-area: p3;
+        color: #292a7a;
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+@media (min-width: 701px) {
+    .DivApresentacaoMotorista{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        min-height: 75vh;
+        height: fit-content;
+        padding-top: 10vh;
+        margin: 0 auto;
+    }
+    .DivApresentacaoMotorista > div{
+        width: 100%;
+        padding: 2vh;
+    }
+    .DivApresentacaoMotorista h1{
+        margin-bottom: 1vh;
+        font-size: 30px;
+        font-weight: 500;
+        color: #292a7a;
+    }
+    .DivApresentacaoMotorista p{
+        font-size: 22px;
+        font-weight: 300;
+        color: #292a7a;
+    }
+    .DivApresentacaoMotorista img{
+        width: 85%;
+        margin: 2vh;
+    }
+
+    .DivApresentacaoGrid{
+        margin: 0 auto;
+        height: fit-content;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30vh 30vh 30vh;
+        grid-template-areas: "img1 p1" "img2 p2" "img3 p3";
+        align-items: center;
+        gap: 1vh 1vh;
+        margin-top: 0vh;
+    }
+    .DivApresentacaoGridImg1{
+        grid-area: img1;
+        width: 30vh;
+    }
+    .DivApresentacaoGridP1{
+        grid-area: p1;
+        color: #292a7a;
+        font-size: 22px;
+        font-weight: 300;
+    }
+    .DivApresentacaoGridImg2{
+        grid-area: img2;
+        width: 30vh;
+    }
+    .DivApresentacaoGridP2{
+        grid-area: p2;
+        color: #292a7a;
+        font-size: 22px;
+        font-weight: 300;
+    }
+    .DivApresentacaoGridImg3{
+        grid-area: img3;
+        width: 30vh;
+    }
+    .DivApresentacaoGridP3{
+        grid-area: p3;
+        color: #292a7a;
+        font-size: 22px;
+        font-weight: 300;
+    }
+}
+@media (min-width: 1000px) {
+    .DivApresentacaoMotorista{
+        min-height: 100vh;
+    }
+.DivApresentacaoGrid{
+        margin: 0 auto;
+        height: fit-content;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 0.2fr 1fr;
+        grid-template-rows: 35vh 40vh 35vh;
+        grid-template-areas: "img1 tr p1" "img2 tr p2" "img3 tr p3";
+        align-items: center;
+        gap: 1vh 1vh;
+        margin-top: 0vh;
+    }
+    .DivApresentacaoGridImg1{
+        grid-area: img1;
+        width: 45vh;
+    }
+    .DivApresentacaoGridP1{
+        grid-area: p1;
+        color: #292a7a;
+        font-size: 26px;
+        font-weight: 300;
+    }
+    .DivApresentacaoGridImg2{
+        grid-area: img2;
+        width: 45vh;
+    }
+    .DivApresentacaoGridP2{
+        grid-area: p2;
+        color: #292a7a;
+        font-size: 26px;
+        font-weight: 300;
+    }
+    .DivApresentacaoGridImg3{
+        grid-area: img3;
+        width: 45vh;
+    }
+    .DivApresentacaoGridP3{
+        grid-area: p3;
+        color: #292a7a;
+        font-size: 26px;
+        font-weight: 300;
+    }
+    tr{
+        width: 1vh;
+        height:112vh;
+        background-color: #292a7a;
+        align-self: start;
+        border-radius: 50px;
+    }
+}

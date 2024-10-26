@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Sobre from './pages/Sobre/Sobre';
-import Motorista from './pages/Motorista';
+import Motorista from './pages/Motorista/Motorista';
 import AppPage from './pages/AppPage';
 import Contato from './pages/Contato';
 import TremHome from './pages/Home/Home';
