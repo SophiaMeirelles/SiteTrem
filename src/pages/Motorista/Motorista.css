@@ -25,6 +25,7 @@
         font-size: 20px;
         font-weight: 300;
         color: #292a7a;
+        text-align: center;
     }
     .DivApresentacaoMotorista img{
         width: 85%;
@@ -83,6 +84,14 @@
         font-weight: 300;
         text-align: justify;
     }
+    .DivCelulares > a {
+        font-size: 25px;
+      }
+      .DivCelulares > img {
+        width: 50%;
+        border-radius: 35px;
+        overflow: hidden;
+      }  
 }
 
 @media (min-width: 501px) and (max-width: 700px) {
@@ -111,6 +120,7 @@
         font-size: 22px;
         font-weight: 300;
         color: #292a7a;
+        text-align: center;
     }
     .DivApresentacaoMotorista img{
         width: 85%;
@@ -159,6 +169,18 @@
         font-size: 20px;
         font-weight: 300;
     }
+    .DivCelulares > div {
+        display: flex;
+        flex-direction: column;
+      }  
+      .DivCelulares > a {
+        font-size: 25px;
+      }
+      .DivCelulares > img {
+        width: 50%;
+        border-radius: 25px;
+        overflow: hidden;
+      }  
 }
 
 @media (min-width: 701px) {
@@ -187,9 +209,11 @@
         font-size: 22px;
         font-weight: 300;
         color: #292a7a;
+        text-align: center;
+        width: 80%;
     }
     .DivApresentacaoMotorista img{
-        width: 85%;
+        width: 55%;
         margin: 2vh;
     }
 
@@ -235,15 +259,48 @@
         font-size: 22px;
         font-weight: 300;
     }
+    .DivCelulares > div {
+        display: flex;
+        flex-direction: row;
+      }  
+      .DivCelulares > a {
+        font-size: 25px;
+      }
+      .DivCelulares > img {
+        width: 45%;
+        border-radius: 25px;
+        overflow: hidden;
+      } 
 }
 @media (min-width: 1000px) {
     .DivApresentacaoMotorista{
         min-height: 100vh;
+        width: 70%;
+        scale: 120%;
     }
-.DivApresentacaoGrid{
+    .DivApresentacaoMotorista > div{
+        width: 100%;
+        padding: 2vh;
+    }
+    .DivApresentacaoMotorista h1{
+        font-size: 35px;
+        text-wrap: nowrap;
+    }
+    .DivApresentacaoMotorista p{
+        font-size: 25px;
+        font-weight: 300;
+        color: #292a7a;
+        width: 80%;
+        text-align: center;
+    }
+    .DivApresentacaoMotorista img{
+        width: 65%;
+        margin: 2vh;
+    }
+    .DivApresentacaoGrid{
         margin: 0 auto;
         height: fit-content;
-        width: 90%;
+        width: 60%;
         display: grid;
         grid-template-columns: 1fr 0.2fr 1fr;
         grid-template-rows: 35vh 40vh 35vh;
@@ -251,6 +308,9 @@
         align-items: center;
         gap: 1vh 1vh;
         margin-top: 0vh;
+    }
+    .DivApresentacaoGrid img{
+        padding: 5vh;
     }
     .DivApresentacaoGridImg1{
         grid-area: img1;
@@ -282,11 +342,45 @@
         font-size: 26px;
         font-weight: 300;
     }
-    tr{
+    
+    .progress-bar-vertical{
+        margin-top: 12vh;
         width: 1vh;
-        height:112vh;
-        background-color: #292a7a;
+        height:250%;
+        background-color: #6365ff;
         align-self: start;
         border-radius: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self:baseline;
     }
+
+    .progress-bar-dot {
+        position: absolute;
+        width: 5vh;                   
+        height: 5vh;
+        background-color: #6365ff;
+        border-radius: 50%;
+    }
+    
+    .progress-bar-dot.top {
+        top: 0;                    
+    }
+    
+    .progress-bar-dot.bottom {
+        bottom: 0;                 
+    }
+    .DivCelulares > div {
+        display: flex;
+      }  
+      .DivCelulares > a {
+        font-size: 25px;
+      }
+      .DivCelulares > img {
+        width: 40%;
+        border-radius: 25px;
+        overflow: hidden;
+      }  
 }

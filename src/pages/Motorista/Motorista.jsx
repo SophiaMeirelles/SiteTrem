@@ -1,5 +1,7 @@
 import React from 'react';
 import "./../Motorista/Motorista.css";
+import { Link } from 'react-router-dom';
+import { FaArrowRight } from "react-icons/fa";
 
 function Motorista() {
   return (
@@ -17,7 +19,11 @@ function Motorista() {
           <img src="Ilustracao7.svg" alt="" className={'DivApresentacaoGridImg1'}/>
           <img src="Ilustracao8.svg" alt="" className={'DivApresentacaoGridImg2'}/>
           <img src="Ilustracao9.svg" alt="" className={'DivApresentacaoGridImg3'}/>
-          <tr></tr>
+          <div className="progress-bar-vertical">
+            <div className="progress-bar-dot top"></div>
+            <div className="progress-bar-dot mid"></div>
+            <div className="progress-bar-dot bottom"></div>
+          </div>
           <p className={'DivApresentacaoGridP1'}>Não se preocupe com mensagens durante a rota, 
             deixe com que o aplicativo avise o passageiro atrvés de notificação a sua chegada.</p>
           <p className={'DivApresentacaoGridP2'}>Consiga mais clientes, ao cadastrar sua van, ela ficará disponivel para que as
@@ -28,6 +34,11 @@ function Motorista() {
           </p>
         </div>
     </div>
+
+    <div className={'DivCelulares'} >
+        <Link to="/app"> Se torne já um motorista parceiro! <FaArrowRight /> </Link>
+        <img src="Ilustracao10.svg" alt="" />
+      </div>
     
     </>
   );

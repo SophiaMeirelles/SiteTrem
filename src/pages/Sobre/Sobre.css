@@ -9,9 +9,10 @@
         min-height: 80vh;
         height: fit-content;
         padding-top: 10vh;
+        padding-bottom: 3vh;
     }
     .DivApresentacao > div{
-        width: 100%;
+        width: 80%;
         padding: 2vh;
     }
     .DivApresentacao h1{
@@ -40,7 +41,7 @@
         margin-bottom: 3vh;
     }
     .DivApresentacao2 > div{
-        width: 100%;
+        width: 80%;
         padding: 2vh;
     }
     .DivApresentacao2 h1{
@@ -69,6 +70,7 @@
         color: #292a7a;
         font-weight: 500;
         font-size: 30px;
+        text-align: center;
     }
     .DivIntegrantes img{
         width: 40%;
@@ -81,6 +83,7 @@
         gap: 1vh;
         color: #292a7a;
         width: 80%;
+        margin-bottom: 3vh;
     }
     .DivIntegrantes1 h2{
         font-size: 25px;
@@ -105,6 +108,7 @@
         gap: 1vh;
         color: #292a7a;
         width: 80%;
+        margin-bottom: 3vh;
     }
     .DivIntegrantes2 h2{
         font-size: 25px;
@@ -122,6 +126,10 @@
         font-weight: 300;
         
     }
+    p strong{
+        font-weight: 400;
+        color: #6365ff;
+    }
 }
 
 @media (min-width: 501px) and (max-width: 700px) {
@@ -136,7 +144,7 @@
         padding-top: 5vh;
     }
     .DivApresentacao > div{
-        width: 100%;
+        width: 80%;
         padding: 2vh;
     }
     .DivApresentacao h1{
@@ -165,7 +173,7 @@
         padding-top: 1vh;
     }
     .DivApresentacao2 > div{
-        width: 100%;
+        width: 80%;
         padding: 2vh;
     }
     .DivApresentacao2 h1{
@@ -212,8 +220,10 @@
         font-weight: 400;
     }
     .DivIntegrantes1 p{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
+        padding: 1vh;
+        line-height: 1.2;
     }
     .DivIntegrantes1 a{
         color: #292a7a;
@@ -227,17 +237,20 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        gap: 2vh;
+        gap: 1vh;
         color: #292a7a;
         width: 80%;
+        margin-bottom: 2vh;
     }
     .DivIntegrantes2 h2{
         font-size: 35px;
         font-weight: 400;
     }
     .DivIntegrantes2 p{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
+        padding: 1vh;
+        line-height: 1.2;
     }
     .DivIntegrantes2 a{
         color: #292a7a;
@@ -245,6 +258,10 @@
         font-size: 20px;
         font-weight: 300;
         margin-left: 1vh;
+    }
+    p strong{
+        font-weight: 400;
+        color: #6365ff;
     }
 }
 @media (min-width: 701px) {
@@ -334,8 +351,10 @@
         font-weight: 400;
     }
     .DivIntegrantes1 p{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
+        padding: 1vh;
+        line-height: 1.2;
     }
     .DivIntegrantes1 a{
         color: #292a7a;
@@ -351,14 +370,17 @@
         gap: 3vh;
         color: #292a7a;
         width: 80%;
+        margin-bottom: 2vh;
     }
     .DivIntegrantes2 h2{
         font-size: 35px;
         font-weight: 400;
     }
     .DivIntegrantes2 p{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
+        padding: 1vh;
+        line-height: 1.2;
     }
     .DivIntegrantes2 a{
         color: #292a7a;
@@ -366,6 +388,10 @@
         font-size: 20px;
         font-weight: 300;
         margin-left: 1vh;
+    }
+    p strong{
+        font-weight: 400;
+        color: #6365ff;
     }
 }
 @media (min-width: 1100px) {
@@ -389,7 +415,7 @@
         color: #292a7a;
     }
     .DivApresentacao p{
-        font-size: 25px;
+        font-size: 24px;
         font-weight: 300;
         color: #292a7a;
     }
@@ -399,7 +425,11 @@
     }
 
     .DivApresentacao2 > div{
-        width: 30%;
+        width: 35%;
+    }
+    p strong{
+        font-weight: 400;
+        color: #6365ff;
     }
 
     .DivIntegrantes{
@@ -408,6 +438,7 @@
         align-items: center;
         flex-direction: column;
         gap: 2vh;
+        margin-top: 5vh;
     }
     .DivIntegrantes h1{
         color: #292a7a;
@@ -426,8 +457,10 @@
         font-weight: 400;
     }
     .DivIntegrantes1 p{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
+        padding: 1vh;
+        line-height: 1.2;
     }
     .DivIntegrantes1 a{
         color: #292a7a;
@@ -442,14 +475,17 @@
         align-items: center;
         gap: 3vh;
         color: #292a7a;
+        margin-bottom: 2vh;
     }
     .DivIntegrantes2 h2{
         font-size: 35px;
         font-weight: 400;
     }
     .DivIntegrantes2 p{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
+        padding: 1vh;
+        line-height: 1.2;
     }
     .DivIntegrantes2 a{
         color: #292a7a;

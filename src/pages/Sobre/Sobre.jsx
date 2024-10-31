@@ -11,9 +11,9 @@ function Sobre() {
       <div>
         <h1>O que somos?</h1>
         <p>
-        Somos uma Startup que se iniciou a partir de um trabalho na instituição Cotemig. 
-        O nosso trabalho tem como objetivo desenvolver um aplicativo para gerenciar transportes escolares,
-        especificamente para vans escolares. Nossa idéia surgiu a partir da necessidade de alguns integrantes
+        <strong>Somos uma Startup que se iniciou a partir de um trabalho na instituição Cotemig.</strong>  <br />
+        O nosso trabalho tem como objetivo desenvolver um <strong> aplicativo para gerenciar transportes escolares</strong>,
+        especificamente para vans escolares. Nossa ideia surgiu a partir da necessidade de alguns integrantes
         que utilizam esse meio de transporte e estavam tendo problemas com a organização, gerenciamento e procura.
         </p>
       </div>
@@ -25,11 +25,11 @@ function Sobre() {
       <div>
         <h1>O que oferecemos?</h1>
         <p>
-        Oferecemos um serviço de organização onde os alunos podem procurar um transporte a partir da instituição
-        onde estudam e bairro onde moram. A partir dessa localização, o app disponibiliza a melhor rota para o 
-        motorista em tempo real, um centro de notificações onde o motorista 
+        Oferecemos um serviço de <strong>organização</strong> onde os alunos podem procurar um transporte a partir da instituição
+        onde estudam e bairro onde moram. A partir dessa localização, o app disponibiliza a <strong>melhor rota</strong> para o 
+        motorista em <strong>tempo real</strong>, um centro de <strong>notificações</strong> onde o motorista 
         pode avisar quando algum imprevisto acontecer, um perfil pessoal com suas
-        informações e maior praticidade em anunciar os dias que você não irá ou voltará utilizando o transporte.
+        informações e maior <strong>praticidade</strong> em anunciar os dias que você não irá ou voltará utilizando o transporte.
         </p>
       </div>
     </div>
@@ -50,7 +50,7 @@ function Sobre() {
       <div className={"DivIntegrantes2"}>
         <div>
           <h2>Alice Lunardi</h2>
-          <p>COO/CMO | Desenvolvedor Front-End | Designer Gráfico | Web Designer | UI/UX | Social Media</p>
+          <p>COO/CMO | Desenvolvedor Front-End | Designer Gráfico | Web Designer | <br /> UI/UX | Social Media</p>
           <a href=""><LuInstagram /> @lunaaardi</a>
           <a href="https://www.linkedin.com/in/alice-lunardi-918407250/"><LiaLinkedin /> Alice Lunardi</a>
         </div>
