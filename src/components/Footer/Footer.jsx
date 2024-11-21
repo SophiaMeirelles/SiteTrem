@@ -17,16 +17,14 @@ function Footer() {
 
         <div className={'Lista'}>
           <ul><Link to="/sobre"> <FaArrowRight /> Quem Somos</Link></ul>
-          <ul><Link to="/"> <FaArrowRight /> Parcerias</Link></ul>
           <ul><Link to="/motorista"> <FaArrowRight /> Motoristas Parceiros</Link></ul>
-          <ul><Link to="/app"> <FaArrowRight /> Aplicativo</Link></ul>
           <ul><Link to="/contato"> <FaArrowRight /> Contato</Link></ul>
         </div>
 
         <div className={'Sociais'}>
-          <ul><a href="#"> <LuInstagram /> @Tremtransporteescolar</a></ul>
-          <ul><a href="#"> <LiaLinkedin /> Trem Enterprise</a></ul>
-          <ul><a href="#"> <SiGmail /> tremtransporteescolar@gmail.com</a></ul>
+          <ul><a href="https://www.instagram.com/transporteescolarmovel/"> <LuInstagram /> @Tremtransporteescolar</a></ul>
+          <ul><a href="https://www.linkedin.com/company/transporte-responsável-escolar-móvel/"> <LiaLinkedin /> Trem Enterprise</a></ul>
+          <ul><a href="/contato"> <SiGmail /> tremtransporteescolar@gmail.com</a></ul>
         </div>
       </footer>
     </>

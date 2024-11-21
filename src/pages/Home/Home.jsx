@@ -37,7 +37,7 @@ function Home() {
             <div>
               <h1>Monitore em tempo real seu transporte institucional.</h1>
                 <p>Vizualize onde o transporte está em tempo real, acompanhe as notificações do motorista e veja a melhor rota para seu destino final.</p>
-                <Link to="/motoristas" className={"button"}>Começar</Link>
+                <Link to="/motorista" className={"button"}>Começar</Link>
             </div>
           <img src="./Ilustracao2.svg" alt=""/>
         </div>

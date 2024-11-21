@@ -1,0 +1,19 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+  }
+  .app-message {
+    font-size: 2rem;
+    color: #4a3fad;
+  }
+  .app-container img{
+    margin: 5vh;
+    width: 30%;
+    min-width: 25vh;
+  }

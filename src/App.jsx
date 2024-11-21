@@ -4,9 +4,9 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Sobre from './pages/Sobre/Sobre';
 import Motorista from './pages/Motorista/Motorista';
-import AppPage from './pages/AppPage';
-import Contato from './pages/Contato';
+import Contato from './pages/Contato/Contato';
 import TremHome from './pages/Home/Home';
+import Aplicativo from './pages/App/App';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<TremHome />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/motorista" element={<Motorista />} />
-        <Route path="/app" element={<AppPage />} />
+        <Route path="/app" element={<Aplicativo />} />
         <Route path="/contato" element={<Contato />} />
     </Routes>
     <Footer />

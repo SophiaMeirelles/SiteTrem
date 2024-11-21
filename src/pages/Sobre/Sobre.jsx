@@ -42,7 +42,7 @@ function Sobre() {
         <div>
           <h2>Henrique Capanema</h2>
           <p>COO | Desenvolvedor Back-End | Banco de Dados  | Administrador</p>
-          <a href=""><LuInstagram /> @henrique_tesla</a>
+          <a href="https://www.instagram.com/henrique_tesla/"><LuInstagram /> @henrique_tesla</a>
           <a href="https://www.linkedin.com/in/henrique-capanema-7a22392b5/"><LiaLinkedin /> Henrique Capanema</a>
         </div>
       </div>
@@ -51,7 +51,7 @@ function Sobre() {
         <div>
           <h2>Alice Lunardi</h2>
           <p>COO/CMO | Desenvolvedor Front-End | Designer Gráfico | Web Designer | <br /> UI/UX | Social Media</p>
-          <a href=""><LuInstagram /> @lunaaardi</a>
+          <a href="https://www.instagram.com/lunaaardi/"><LuInstagram /> @lunaaardi</a>
           <a href="https://www.linkedin.com/in/alice-lunardi-918407250/"><LiaLinkedin /> Alice Lunardi</a>
         </div>
         <img src="./Alice.svg" alt="" />
@@ -88,7 +88,7 @@ function Sobre() {
         <div>
           <h2>Ana Clara Camargos</h2>
           <p>SCRUM MASTER | Pesquisador | Organizador | Administrador</p>
-          <a href=""><LuInstagram /> @_anaclara.cl</a>
+          <a href="https://www.instagram.com/_anaclara.cl/"><LuInstagram /> @_anaclara.cl</a>
           <a href="https://www.linkedin.com/in/ana-clara-camargos-6935322b1/"><LiaLinkedin /> Ana Clara Camargos</a>
         </div>
         <img src="./Ana.svg" alt="" />
