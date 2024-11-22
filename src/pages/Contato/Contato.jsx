@@ -1,90 +1,98 @@
-import React, { useState } from 'react';
-import InputMask from 'react-input-mask'; // Biblioteca para máscara de entrada
-import './Contato.css';
+import React, { useState } from "react";
+import InputMask from "react-input-mask";
+import emailjs from "emailjs-com";
+import "./Contato.css";
 
 function Contato() {
-  const [formData, setFormData] = useState({
-    nome: '',
-    telefone: '',
-    email: '',
-    mensagem: '',
-  });
+  const [popupMessage, setPopupMessage] = useState(""); // Mensagem do popup
+  const [showPopup, setShowPopup] = useState(false); // Controle de visibilidade do popup
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
+  function sendEmail(e) {
     e.preventDefault();
 
-    try {
-      const response = await fetch('http://localhost:5000/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+    emailjs
+      .sendForm(
+        "service_f7dsxuy",
+        "template_89zhpti",
+        e.target,
+        "tsAaT89swHjM9GoJo"
+      )
+      .then(
+        (result) => {
+          setPopupMessage("Email enviado com sucesso!"); // Define mensagem de sucesso
+          setShowPopup(true); // Exibe o popup
         },
-        body: JSON.stringify(formData),
-      });
+        (error) => {
+          setPopupMessage("Erro ao enviar o email. Tente novamente."); // Define mensagem de erro
+          setShowPopup(true); // Exibe o popup
+        }
+      );
 
-      if (response.ok) {
-        alert('Email enviado com sucesso!');
-        setFormData({ nome: '', telefone: '', email: '', mensagem: '' });
-      } else {
-        alert('Erro ao enviar o email.');
-      }
-    } catch (error) {
-      console.error('Erro:', error);
-      alert('Erro ao enviar o email.');
-    }
-  };
+    e.target.reset(); // Reseta o formulário
+  }
+
+  // Função para fechar o popup
+  function closePopup() {
+    setShowPopup(false);
+    setPopupMessage("");
+  }
 
   return (
     <section className="contato-container">
       <h1 className="titulo">Contato</h1>
-      <form className="formulario-contato" onSubmit={handleSubmit}>
+      <form className="formulario-contato" onSubmit={sendEmail}>
         <div className="form-esquerda">
           <label htmlFor="nome">Nome</label>
           <input
             type="text"
-            name="nome"
+            name="from_name"
             id="nome"
-            value={formData.nome}
-            onChange={handleChange}
             placeholder="Seu nome completo"
+            required
           />
 
           <label htmlFor="telefone">Telefone</label>
           <InputMask
             mask="(99) 9 9999 9999"
-            name="telefone"
+            name="from_telephone"
             id="telefone"
-            value={formData.telefone}
-            onChange={handleChange}
             placeholder="(00) 0 0000 0000"
+            required
           />
 
           <label htmlFor="email">Email</label>
           <input
             type="email"
-            name="email"
+            name="from_email"
             id="email"
-            value={formData.email}
-            onChange={handleChange}
             placeholder="seuemail@exemplo.com"
+            required
           />
         </div>
         <div className="form-direita">
           <label htmlFor="mensagem">Mensagem</label>
           <textarea
-            name="mensagem"
+            name="html_message"
             id="mensagem"
-            value={formData.mensagem}
-            onChange={handleChange}
             placeholder="Escreva sua mensagem aqui..."
+            required
           ></textarea>
-          <button type="submit" className="botao-enviar">Enviar</button>
+          <button type="submit" value="Send" className="botao-enviar">
+            Enviar
+          </button>
         </div>
       </form>
+
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <p>{popupMessage}</p>
+            <button onClick={closePopup} className="popup-close">
+              Fechar
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

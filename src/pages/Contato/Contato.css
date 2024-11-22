@@ -53,7 +53,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  border-color: #ff0000;
+  border-color: #6365ff;
   outline: none;
 }
 
@@ -77,12 +77,9 @@ textarea {
 }
 
 .botao-enviar:hover {
-  background-color: #3a2e8a;
+  background-color: #6365ff;
 }
 
-input:invalid {
-  border: 2px solid red;
-}
 
 
 @media (max-width: 768px) {
@@ -112,3 +109,56 @@ input:invalid {
     width: 100%;
   }
 }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #0056b3;
+}
+
+.popup-close {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  background-color: #0056b3;
+}
+
+/* Animação opcional */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
